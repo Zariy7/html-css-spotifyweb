@@ -12,27 +12,9 @@
     font-weight: 600;
 }
 
-header {
-    height: 7.5rem;
-    width: 100%;
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.5);
-    top: 0;
-    z-index: 1;
-}
-
-footer {
-    height: 10rem;
-    width: 100%;
-    position: fixed;
-    background-color: rgb(78, 78, 78);
-    bottom: 0;
-    z-index: 3;
-}
-
 #songs-repertoire {
     width: calc(100% - 5rem);
-    background-color: red;
+    background-color: rgb(12, 12, 87);
 }
 
 /* UTILITY CLASSES */
@@ -60,8 +42,42 @@ ul {
     align-items: center;
 }
 
+.justify-center{
+    justify-content: center;
+}
+
 .space-between{
     justify-content: space-between;
+}
+
+.space-around{
+    justify-content: space-around;
+}
+
+.flex-end{
+    justify-content: flex-end;
+}
+
+.width-100{
+    width: 100%;
+}
+
+/* HEADER CLASSES */
+header {
+    height: 7.5rem;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    z-index: 1;
+}
+
+#upgrade-button{
+    padding: 1rem;
+    margin-right: 3rem;
+    border: 1px solid white;
+    border-radius: 25px;
+    color: white;
 }
 
 /* SIDEBAR CLASSES */
@@ -70,6 +86,7 @@ ul {
     width: 5rem;
     background-color: black;
     z-index: 2;
+    overflow-y: auto;
 }
 
 .logo-container {
@@ -107,6 +124,35 @@ ul {
 
 #profile-image{
     max-height: 2rem;
+}
+
+/* FOOTER CLASSES */
+
+footer {
+    height: 10rem;
+    width: 100%;
+    position: fixed;
+    background-color: rgb(78, 78, 78);
+    bottom: 0;
+    z-index: 3;
+}
+
+footer img{
+    max-height: 30%;
+}
+
+footer span {
+    color: darkgray;
+    font-size: small;
+}
+
+footer i{
+    color: rgb(151, 144, 144);
+}
+
+.footer-col{
+    width: (100% / 3 - 1rem);
+    padding: 1rem;
 }
 
 /* SIDEBAR RESPONSIVENESS */

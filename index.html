@@ -8,7 +8,8 @@
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
-        <header>
+        <header class="display-flex flex-end align-center">
+            <div id="upgrade-button">Effettua L'Upgrade</div>
         </header>
 
         <main>
@@ -71,6 +72,8 @@
                         </div>
                     </div>
 
+                    <!-- INSTALL PROMPT AND ACCOUNT -->
+
                     <div style="padding: 20px;">
                         <div class="display-flex align-center">
                             <i class="fa-solid fa-arrow-down fa-2x"></i>
@@ -91,7 +94,55 @@
             </div>
         </main>
         
-        <footer>
+        <footer class="display-flex space-between">
+
+            <!-- SONG PLAYING -->
+
+            <div class="display-flex align-center footer-col space-between">
+                <img src="./img/sinister.jpeg" alt="Sinister Song">
+                <div class="white">
+                    Sinister
+                    <br>
+                    <span>
+                        Brano Nome
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div>
+                    <i class="fa-regular fa-folder"></i>
+                </div>
+            </div>
+
+            <!-- TIME PLAYING -->
+
+            <div class="footer-col" style="width: 75%;">
+                <div class="display-flex align-center justify-center" style="column-gap: 3rem;">
+                    <i class="fa-solid fa-shuffle white fa-2x"></i>
+                    <i class="fa-solid fa-backward-step white fa-2x"></i>
+                    <i class="fa-regular fa-circle-play white fa-3x"></i>
+                    <i class="fa-solid fa-forward-step white fa-2x"></i>
+                    <i class="fa-solid fa-rotate-right white fa-2x"></i>
+                </div>
+
+                <div class="display-flex space-around align-center">
+                    <div class="white">0:25</div>
+                    <hr style="border: 3px solid black; width: 75%;">
+                    <div class="white">4:35</div>
+                </div>
+            </div>
+
+            <!-- PLAYER SETTINGS -->
+
+            <div class="footer-col display-flex">
+                <div class="display-flex space-around align-center width-100">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-desktop"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                    <hr style="border: 3px solid black; width: 75%;">
+                </div>
+            </div>
         </footer>
     </body>
 </html>
