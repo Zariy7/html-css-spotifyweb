@@ -31,11 +31,8 @@ footer {
 }
 
 #songs-repertoire {
-    height: 200rem;
+    width: calc(100% - 5rem);
     background-color: red;
-    z-index: 2;
-    padding-left: 10rem;
-    padding-bottom: 10rem;
 }
 
 /* UTILITY CLASSES */
@@ -55,21 +52,24 @@ ul {
     display: flex;
 }
 
+.flex-direction{
+    flex-direction: column;
+}
+
 .align-center{
     align-items: center;
+}
+
+.space-between{
+    justify-content: space-between;
 }
 
 /* SIDEBAR CLASSES */
 
 #sidebar {
     width: 5rem;
-    height: calc(100% - 7.5rem);
-    position: fixed;
-    top: 0;
-    left: 0;
     background-color: black;
     z-index: 2;
-    overflow-y: auto;
 }
 
 .logo-container {
@@ -100,6 +100,15 @@ ul {
     margin-top: 1rem;
 }
 
+#sidebar-menu-two{
+    overflow-y: auto;
+    max-height: 10rem;
+}
+
+#profile-image{
+    max-height: 2rem;
+}
+
 /* SIDEBAR RESPONSIVENESS */
 
 @media screen and (min-width: 769px){
@@ -117,10 +126,6 @@ ul {
     
     #logo-extended > img{
         display: inline;
-    }
-
-    #sidebar-menu-one{
-        margin-left: 1rem;
     }
 
     #sidebar-menu-one > li{

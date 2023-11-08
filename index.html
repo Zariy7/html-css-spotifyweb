@@ -12,65 +12,82 @@
         </header>
 
         <main>
-            <div id="sidebar">
+            <div class="display-flex" style="height: calc(100vh - 10rem);">
+                <div id="sidebar" class="display-flex flex-direction space-between align-center">
+                    <div>
 
-                <!-- LOGO SECTION -->
+                        <!-- LOGO SECTION -->
 
-                <div>
-                    <div class="logo-container" id="logo-collapsed">
-                        <img src="./img/logo-small.svg" alt="Spotify">
+                        <div>
+                            <div class="logo-container" id="logo-collapsed">
+                                <img src="./img/logo-small.svg" alt="Spotify">
+                            </div>
+
+                            <div class="logo-container" id="logo-extended">
+                                <img src="./img/logo.svg" alt="Spotify">
+                            </div>
+                        </div>
+
+                        <!-- FIRST LIST SECTION -->
+                        <div>
+                            <ul id="sidebar-menu-one">
+                                <li>
+                                    <i class="fa-solid fa-house white fa-2x"></i>
+                                    <div class="hide-show">Home</div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-magnifying-glass white fa-2x"></i>
+                                    <div class="hide-show">Cerca</div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-record-vinyl white fa-2x"></i>
+                                    <div class="hide-show">La Tua Libreria</div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- SECOND LIST SECTION -->
+                        <div class="hide-show">
+                            <h1>PLAYLIST</h1>
+                            <div class="display-flex align-center">
+                                <i class="fa-solid fa-plus white fa-2x" id="add-playlist"></i>
+                                <div>Crea Playlist</div>
+                            </div>
+                            <ul id="sidebar-menu-two">
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                            </ul>
+                        </div>
                     </div>
 
-                    <div class="logo-container" id="logo-extended">
-                        <img src="./img/logo.svg" alt="Spotify">
+                    <div style="padding: 20px;">
+                        <div class="display-flex align-center">
+                            <i class="fa-solid fa-arrow-down fa-2x"></i>
+                            <div class="hide-show">Installa App</div>
+                        </div>
+                        <hr class="hide-show">
+                        <div class="display-flex align-center">
+                            <img src="./img/profile.svg" alt="John Doe" id="profile-image">
+                            <div class="hide-show">John Doe</div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- FIRST LIST SECTION -->
-                <div>
-                    <ul id="sidebar-menu-one">
-                        <li>
-                            <i class="fa-solid fa-house white fa-2x"></i>
-                            <div class="hide-show">Home</div>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-magnifying-glass white fa-2x"></i>
-                            <div class="hide-show">Cerca</div>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-record-vinyl white fa-2x"></i>
-                            <div class="hide-show">La Tua Libreria</div>
-                        </li>
-                    </ul>
+
+                <div id="songs-repertoire">
+
                 </div>
-
-                <!-- SECOND LIST SECTION -->
-                <div class="hide-show">
-                    <h1>PLAYLIST</h1>
-                    <div class="display-flex align-center">
-                        <i class="fa-solid fa-plus white fa-2x" id="add-playlist"></i>
-                        <div>Crea Playlist</div>
-                    </div>
-                    <ul id="sidebar-menu-two">
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="songs-repertoire">
-
             </div>
         </main>
         
