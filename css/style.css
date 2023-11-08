@@ -138,7 +138,7 @@ footer {
 }
 
 footer img{
-    max-height: 30%;
+    max-width: 2rem;
 }
 
 footer span {
@@ -151,7 +151,7 @@ footer i{
 }
 
 .footer-col{
-    width: (100% / 3 - 1rem);
+    width: 5rem;
     padding: 1rem;
 }
 
@@ -194,5 +194,28 @@ footer i{
     #add-playlist{
         background-color: gray;
         padding: 0.5rem;
+    }
+}
+
+/* FOOTER RESPONSIVENESS */
+
+@media screen and (min-width: 401px)
+{
+    .footer-col{
+        width: 10rem;
+    }
+}
+
+@media screen and (min-width: 769px)
+{
+    .footer-col{
+        width: 15rem;
+    }
+}
+
+@media screen and (min-width: 991px)
+{
+    .footer-col{
+        width: 20rem;
     }
 }
